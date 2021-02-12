@@ -10,218 +10,631 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.css">
+  <link rel="stylesheet" href="">
   <style>
-    p.title {
-      text-align: center;
-    }
+    * { 
+  -o-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
 
-    p.subtitle{
-      text-align: center;
-    }
+html,body{ 
+  width:100%; 
+  height:100%; 
+  margin:0; 
+  padding:0;
+}
+body{ 
+  overflow:hidden; 
+  color:rgba(255,255,255,0.5);
+  font-family: 'helvetica', sans-serif; 
+}
+#ScrollPane{ 
+  position:relative; 
+  width:100%; 
+  height:100%; 
+}
+.scr,.pane{ 
+  position:relative; 
+  width:100%; 
+  height:100%;
+  font-size:30px;
+}
+b{
+  font-size:40px; 
+  display:block; 
+  color:#ffffff; 
+}
+p.name{
+  font-size:60px;
+  display:block;
+  color:#ffffff;
+}
+span{ 
+  display:block; 
+  text-align:center;
+}
+.ct{  
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:100%; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.ct2{  
+  border: 5px ;
+  position:absolute; 
+  top:0; 
+  left:13%; 
+  width:200px; 
+  height:270px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+p.peePoo{
+  font-size:24px;
+  font-family: 'Helvetica';
+  display:block;
+  color:black;
+  background-color:#ffffff;
+  text-align:justify;
+  border:10px solid #ffffff;
+  border-radius:2%;
+}
+img.KarlIMG{
+  border:10px solid #ffffff;
+  border-radius:2%;
+}
+.peePee{  
+  border:5px ;
+  border-radius:2%;
+  
+  background-color:#ffffff;
+  
+  font-size:10px;
+  position:absolute; 
+  top:149px; 
+  left:13%; 
+  width:385px; 
+  height: 504px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.Karl{  
+  border: 5px solid;
+  position:absolute; 
+  top:220px; 
+  right:13%; 
+  width:385px; 
+  height: 504px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.aboutHeader{
+  border: 5px ;
+  position:absolute; 
+  top:; 
+  left:11%; 
+  width:200px; 
+  height:270px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.Karl2{  
+  border: 5px;
+  position:absolute; 
+  top:40%; 
+  left:13%; 
+  width:; 
+  height:; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.frank2{
+  border:5px ;
+  border-radius:2%;
+  
+  background-color:#ffffff;
+  
+  font-size:10px;
+  position:absolute; 
+  top:20%; 
+  right:13%; 
+  width:385px; 
+  height: 504px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.pricesHeader{
+  border: 5px ;
+  position:absolute; 
+  top:; 
+  left:42%; 
+  width:200px; 
+  height:270px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.priceOne{
+  border:5px ;
+  border-radius:2%;
+  
+  background-color:#ffffff;
+  
+  font-size:10px;
+  position:absolute; 
+  top:30%; 
+  left:13%; 
+  width:385px; 
+  height: 504px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.priceTwo{
+   border:5px ;
+  border-radius:2%;
+  
+  background-color:#ffffff;
+  
+  font-size:10px;
+  position:absolute; 
+  top:30%; 
+  right:13%; 
+  width:385px; 
+  height: 504px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.contactHeader{
+  border: 5px ;
+  position:absolute; 
+  top:; 
+  left:13%; 
+  width:200px; 
+  height:270px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.yourMail{
+  border:5px ;
+  border-radius:7%;
+  
+  background-color:#ffffff;
+  
+  font-size:10px;
+  position:absolute; 
+  top:30%; 
+  left:13%; 
+  right:13%;
+  width:74%; 
+  height: 80px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.yourMessage{
+  border:5px ;
+  border-radius:2%;
+  
+  background-color:#ffffff;
+  
+  font-size:10px;
+  position:absolute; 
+  top:40%; 
+  right:13%; 
+  width:74%; 
+  height: 400px; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.yourMailInput{
+  border:5px ;
+  border-radius:7%;
+  font-size:30px;  
+  
+  font-size:10px;
+  position:absolute; 
+  top:5%; 
+  left:5%; 
+  width:90%; 
+  height:90% ; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.yourMailInput::-webkit-input-placeholder{
+   color: gray;
+   font-size:30px
+}
+.yourMessageInput{
+  border:5px ;
+  border-radius:7%;
+  font-size:30px;  
+  
+  font-size:10px;
+  position:absolute; 
+  top:5%; 
+  left:5%; 
+  width:90%; 
+  height:90% ; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.yourMessageInput::-webkit-input-placeholder{
+   color: gray;
+   font-size:30px
+}
+.yourMessageInput::-webkit-input{
+  font-size:30px;
+}
 
-    .column {border-radius:25px;
-        margin:25px;
-      }
-    .button {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-    }
-    iframe {
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-    }
-    .tesla {
-      display: flex;
-      align-items: center;
-    }
-    .link {
-      color: DarkTurquoise ;
-    }
-    footer {
-      margin-top: 50px;
-    }
+ .an .ct{
+   rotateX(90deg) scale(0.5); 
+   opacity:0; 
+   transition:all 0.5s cubic-bezier(0.175, 0.885, 0.380, 1.470);
+}
+.scrollup{ 
+  position:absolute; 
+  width:200px; 
+  top:10px; 
+  left:50%; 
+  margin-left:-100px; 
+  z-index:3000; 
+  font-size:20px; 
+  text-align:center;
+}
+.linkedInButton{ 
+  position:absolute; 
+  width:200px; 
+  top:50%; 
+  right:20%; 
+  margin-left:-100px; 
+  z-index:3000; 
+  font-size:20px; 
+  text-align:center;
+}
+.instaButton{ 
+  position:absolute; 
+  width:200px; 
+  top:50%; 
+  left:20%; 
+  margin-left:-100px; 
+  z-index:3000; 
+  font-size:20px; 
+  text-align:center;
+}
+.frontPageButtone{ 
+  position:absolute; 
+  width:200px; 
+  bottom:10px; 
+  left:50%; 
+  margin-left:-100px; 
+  z-index:3000; 
+  font-size:20px; 
+  text-align:center;
+}
+button.frontPageButton{
+    position: relative;
+    top:;
+    bottom:10px;
+    padding: 16px 24px;
+    border-radius: 55px;
+    border: 4px solid white;
+    background-color: #313030;
+    color: white;
+  
+    font-size: 40px;
+    transition-duration: 0.4s;
+}
+button.frontPageButton:hover{
+  background-color: white;
+  color: #313030;
+  border: 4px solid #313030;
+
+}
+.an.visible .ct{ 
+  transform:translate3D(0,0,0) scale(1); 
+  opacity:1; 
+}
+
+
   </style>
 </head>
 <body>
-
-
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-   <div class="navbar-brand">
-     <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ/videos">
-       <img src="Titelfoto.png" width="" height="28">
-     </a>
-
-     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-     </a>
-   </div>
-
-   <div id="navbarBasicExample" class="navbar-menu">
-
-    <div class="navbar-start">
-
-     <a class="navbar-item" href="index.html">
-        Home
-     </a>
-
-      <a class="navbar-item" href="Merch.html">
-        Merch
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-       <a class="navbar-link">
-        Other:
-       </a>
-
-       <div class="navbar-dropdown" >
-
-        <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ">
-          Youtube
-        </a>
-
-        
-
-        <a class="navbar-item" href="https:// twitter.com/Chezzeproducti1">
-          Twitter
-        </a>
-
-        
-
-       <a class="navbar-item" href="contact.html">
-          Contact on website
-        </a>
-
-      </div>
-     </div>
-     </div>
-
- </div>
-</nav>
-
-
-
-
-
-
- <div class="container">
-
-  <div class='content'>
-
-    <div class='columns is-centered'>
-
-      <div class="column is-three-quarters has-background-light">
-      <p class="title is-1">About</p>
-    <p class="subtitle is-2">Me</p>
-      </div>
-  </div>
-
-    <div class="columns is-6 is-centered">
-
-      <div class="column is-one-third has-background-light">
-
-      <p>
-        I am a 14 year old boy. I am in 8 grade on a (kinda) normal school in Copenhagen.
-
-        I do html as a hobby and made this site myself (with help).
-      </p>
-
-      </div>
-
-      <div class="column is-one-third has-background-light">
-
-      <p>
-        I like stuff like Marvel movies and (some) Comics.
-        I play Xbox a lot and i like the game Forza.
-        If you want to add me on Xbox my Gamertag is Chezzzeduck.
-      </p>
-      
-    </div>
-    </div>
-
-
-    <div class="columns is-one-third is-centered"> 
-
-      <div class="column is-one-third has-background-light">
-
-      <p> I really appreciate Elon Musk's work. I am a Big fan of his. Thats why there is a picture of the falcon Heavy here →
-      </p> 
-
-      </div>  
-
-      <div class="tesla column is-one-third has-background-light">
-
-        <figure class="image is-480x480 is-centered">
-
-          <img  src="">
-
-        </figure>
-      </div>
-</div>
-    </div>
-  </div>
-</div>
-
- 
-<footer id="footer" class="footer">
-     <div class="columns is-gapless">
-   <div class="column">
-      
-      
+<div id="ScrollPane">
+	<div class="scr pane prt" style="background:#313030;" data-id="Welcome">
     
-     
-      <p>
-
-       <a href="contact.html" class="link is-info"> Contact me
-        </a>
-    </p>
-    <br>
     
-      <p> 
-        <a href="" class="link is-info">
-          Discord 
-        </a>
+    
+    <div class="ct">
+      <p class="name">firstName lastName</p> 
+    </div>
+    <div class="frontPageButtone"> <button class="frontPageButton" onclick="UpdateScreen('+')"> ⇩ </button><br>
+      
+    </div></div>	
+  
+  
+	<div class="scr pane prt an" style="background:#313030;" data-id="scr02">
+    <div class="ct2"><b>Welcome</b>
+     </div>
+    <div class="Karl">
+      <img  class="KarlIMG"    src="https://cdn.pixabay.com/photo/2019/03/13/11/04/copenhagen-4052654_960_720.jpg" width="385" height="504">
+    </div>
+    <div class="peePee"> 
+      <p class="peePoo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       </p></div>
+    
+    <div class="frontPageButtone"> <button class="frontPageButton" onclick="UpdateScreen('+')"> ⇩ </button><br>
+      
+    </div>
+  </div>
+
+  
+	<div class="scr pane prt an" style="background:#313030;" data-id="scr03">
+    <div class="aboutHeader"><b>About</b></div>
+    <div class="Karl2">
+      <img      src="https://cdn.pixabay.com/photo/2017/01/31/15/32/boy-2025115_960_720.png" width="525" height="975">
+    </div>
+      <div class="frank2">
+        <p class="peePoo">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+     <div class="frontPageButtone"> <button class="frontPageButton" onclick="UpdateScreen('+')"> ⇩ </button><br>
+      
+    </div>
+    </div>	
+  
+  <div class="scr pane prt an" style="background:#313030;" data-id="scr04">
+    <div class="pricesHeader"><b>Prices</b></div>
+    <div class="priceOne">
+      <p class="peePoo">
+        Basis
       </p>
-      <br>
-
+    </div>  
+    <div class="priceTwo">
+      <p class="peePoo">
+        Pro
+      </p>
     </div>
-  <div class="column">
-    <p> <a href="index.html" class="link is-info">Home
-    </a> </p>
-    <br>
-    <p> </p>
-    <p> <a href="Merch.html" class="link is-info">Merch</a></p>
+    <div class="frontPageButtone"> <button class="frontPageButton" onclick="UpdateScreen('+')"> ⇩ </button><br>
+      
     </div>
-  <div class="column">
-     <P> This side was made with Bulma </p>
+    </div>
+  
+  
+  
+  
+  <div class="scr pane prt an" style="background:#313030;" data-id="scr05">
+    <div class="contactHeader"><b>Contact</b></div>
+       <div class="yourMail">
+         <form>
+           <input type=email placeholder="Your@Email.com" class="yourMailInput">
+             
+           </input>
+         </form>
+    </div>  
+    <div class="yourMessage">
+      <form>
+        <input type=text placeholder="Write Something" class="yourMessageInput">
+             
+        </input>
+      </form>
+    </div>
+    <div class="frontPageButtone"> <button class="frontPageButton" onclick="UpdateScreen('+')"> ⇩ </button><br>
+      
+    </div>
+    
+    </div>
 
-     <P> <strong>2018</strong> </P>
-  </div>
-  </div>
-</footer>
+  <div class="scr pane prt an" style="background:#313030;" data-id="scr06">
+    <form action="https://google.dk">
+    <div class="instaButton"> <button type="submit" class="frontPageButton" onclick="UpdateScreen('+')"> Instagram </button></div>
+    </form>
+    <div class="linkedInButton"> 
+     <form> <button type="submit" class="frontPageButton" onclick="UpdateScreen('+')"> LinkedIn </button></form> </div></div> 
+
+
+
 
 
 <script>
   console.log('Hello World!')
+Init();
 
-  var menuOpen = document.querySelector('.navbar-burger');
-  var menu = document.querySelector(
-    '.navbar-menu') ;
+//Mouse Wheel event : jQuery Mouse Wheel Plugin
+$('.pane,.scrzone').mousewheel(function(event) {
+	event.preventDefault();
+	if($ScrollState==false){$ScrollState=true;if(event.deltaY < 0){UpdateScreen('+');}else if(event.deltaY > 0){UpdateScreen('-');}else{$ScrollState=false;}}
+});
 
-  menuOpen.addEventListener('click', function(){
-    console.log('U ok?')
+//Init
+function Init(){
+	$ScrollSpeed = 0.4; //Animation Speed
+	$ScrollState=false; //Scroll possible if True - If False anim already running //
+	$ActualSlide = $CibleSlide = $('.pane').first().attr('data-id'); //First slide
+	$ListSlides = new Array(); $('.pane').each(function(){     $ListSlides.push($(this).attr('data-id')); }); //List of slides (.pane)
+	TweenMax.to(window, 0, {scrollTo:0});
+	TweenMax.to('.spane', 0, {scrollTo:{y:0, x:0}});
+	$('.visible').removeClass('visible');
+}
 
-    menuOpen.classList.toggle('is-active')
-
-    menu.classList.toggle('is-active')
-
-  }  )
+//ANIMATE
+function UpdateScreen(operator){
+  //console.log(operator);
+	$ActualSlide = $CibleSlide;
+	if(operator=="+"){ $CibleSlide = $ListSlides[$ListSlides.indexOf($ActualSlide)+1]; }else{ $CibleSlide = $ListSlides[$ListSlides.indexOf($ActualSlide)-1]; }//If + next slide / If - previos slide
   
+	
+	if(!$CibleSlide){ $ScrollState=false; $('#Helper').html("Break");$CibleSlide = $ActualSlide; return; }//Stops everything if no slide before/after
+  
+	$ActualSlideDOM = $('.pane[data-id='+$ActualSlide+']');
+	$CibleSlideDOM = $('.pane[data-id='+$CibleSlide+']');
+	//Scroll To : Greensock GSAP
+	if( $ActualSlideDOM.closest('.prt').find('.spane').length && (operator=="+" && $ActualSlideDOM.next('.pane').length  ||  operator=="-" && $ActualSlideDOM.prev('.pane').length ) ){
+		TweenMax.to($ActualSlideDOM.closest('.spane'), $ScrollSpeed, {scrollTo:'.pane[data-id='+$CibleSlide+']',ease: Power2.easeOut,onComplete:function(){$ScrollState=false; $CibleSlideDOM.addClass('visible');}}); //Horizontal or vertical
+	}else{
+		TweenMax.to(window, $ScrollSpeed, {scrollTo:'.pane[data-id='+$CibleSlide+']',ease: Power2.easeOut,onComplete:function(){$ScrollState=false; $CibleSlideDOM.addClass('visible');}});//Normal
+	}
+}
+
+//Init() On Resize
+$(window).resize(function(){
+	Init();
+});
+
+
+
+
 
 </script>
 
